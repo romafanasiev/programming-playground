@@ -8,3 +8,21 @@ export abstract class Product {
 
   abstract getPrice(): number;
 }
+
+export class BaseProduct implements Product {
+  constructor(
+    public name: string,
+    public price: number,
+  ) {
+    this.name = name;
+    this.price = price;
+  }
+
+  getInfo() {
+    return { name: this.name, price: this.price };
+  }
+
+  getPrice() {
+    return this.price;
+  }
+}
