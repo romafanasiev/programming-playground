@@ -9,7 +9,10 @@
     "skipLibCheck": true,
     "declaration": true,
     "baseUrl": ".",
-    "preserveWatchOutput": true
+    "preserveWatchOutput": true,
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": false,
+    "verbatimModuleSyntax": true
   },
   "include": ["**/*.d.ts", "*.js"],
   "exclude": ["node_modules"]
