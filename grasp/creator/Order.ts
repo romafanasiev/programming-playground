@@ -1,4 +1,4 @@
-import type { OrderItem } from "./OrderItem.ts";
+import type { OrderItem } from './OrderItem.ts';
 
 export class Order {
   constructor(public items: OrderItem[] = []) {}

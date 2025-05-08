@@ -1,7 +1,10 @@
-import type { Product } from "./Product.ts";
+import type { Product } from './Product.ts';
 
 export class OrderItem {
-  constructor(public product: Product, public quantity: number = 1) {}
+  constructor(
+    public product: Product,
+    public quantity: number = 1,
+  ) {}
 
   get price() {
     return this.product.getPrice() * this.quantity;
