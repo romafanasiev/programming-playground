@@ -1,4 +1,4 @@
-export abstract class Product {
+abstract class AbstractProduct {
   constructor(
     public name: string,
     public price: number,
@@ -9,7 +9,7 @@ export abstract class Product {
   abstract getPrice(): number;
 }
 
-export class BaseProduct implements Product {
+export class Product implements AbstractProduct {
   constructor(
     public name: string,
     public price: number,
