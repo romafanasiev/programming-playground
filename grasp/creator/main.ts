@@ -2,25 +2,8 @@ import { Order } from './Order.ts';
 import { OrderItem } from './OrderItem.ts';
 import { Product } from './Product.ts';
 
-class BaseProduct extends Product {
-  constructor(
-    public name: string,
-    public price: number,
-  ) {
-    super(name, price);
-  }
-
-  getInfo() {
-    return { name: this.name, price: this.price };
-  }
-
-  getPrice() {
-    return this.price;
-  }
-}
-
-const iphone = new BaseProduct('Iphone', 1000);
-const laptop = new BaseProduct('Laptop', 2000);
+const iphone = new Product('Iphone', 1000);
+const laptop = new Product('Laptop', 2000);
 
 const iphoneItem = new OrderItem(iphone, 2);
 const laptopItem = new OrderItem(laptop, 1);
