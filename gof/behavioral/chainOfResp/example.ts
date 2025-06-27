@@ -27,7 +27,7 @@ abstract class AbstractHandler implements Handler {
       return this.nextHandler.handle(request);
     }
 
-    return null;
+    return '';
   }
 }
 
